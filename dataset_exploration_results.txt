@@ -1,0 +1,232 @@
+HASIL EKSPLORASI DATASET - Fraudulent E-Commerce Transactions
+Generated for Assignment I - Big Data Analytics (COMP8035041)
+
+======================================================================
+DATASET: Version 2 (Smaller/Testing Dataset)
+File: D:\Kevin\Binus S2\Semester 3\Big Data Analytics\Fraud_Detection_Project\dataset\Fraudulent_E-Commerce_Transaction_Data_2.csv
+======================================================================
+
+--- 1. INFO DASAR ---
+Jumlah baris: 23,634
+Jumlah kolom: 16
+Kolom: ['Transaction ID', 'Customer ID', 'Transaction Amount', 'Transaction Date', 'Payment Method', 'Product Category', 'Quantity', 'Customer Age', 'Customer Location', 'Device Used', 'IP Address', 'Shipping Address', 'Billing Address', 'Is Fraudulent', 'Account Age Days', 'Transaction Hour']
+
+--- 2. MISSING VALUES ---
+  Tidak ada missing values.
+
+--- 3. DUPLICATES ---
+  Baris duplikat (semua kolom): 0
+  Transaction ID duplikat: 0
+
+--- 4. DISTRIBUSI FRAUD (Is Fraudulent) ---
+  Legitimate (0): 22,412 (94.829%)
+  Fraud (1): 1,222 (5.171%)
+  Class Imbalance Ratio: 18.3:1 (Legitimate:Fraud)
+
+--- 5. STATISTIK FITUR NUMERIKAL ---
+       Transaction Amount  Customer Age  Quantity  Account Age Days  Transaction Hour
+count            23634.00      23634.00  23634.00          23634.00          23634.00
+mean               229.37         34.56      3.00            178.66             11.27
+std                282.05         10.01      1.42            107.39              6.98
+min                 10.00         -2.00      1.00              1.00              0.00
+25%                 69.07         28.00      2.00             84.00              5.00
+50%                151.42         35.00      3.00            178.00             11.00
+75%                296.13         41.00      4.00            272.00             17.00
+max               9716.50         73.00      5.00            365.00             23.00
+
+--- 6. DISTRIBUSI FITUR KATEGORIKAL ---
+
+  Payment Method:
+    debit card: 5,952 (25.18%)
+    credit card: 5,923 (25.06%)
+    PayPal: 5,899 (24.96%)
+    bank transfer: 5,860 (24.79%)
+
+  Product Category:
+    home & garden: 4,786 (20.25%)
+    electronics: 4,748 (20.09%)
+    toys & games: 4,730 (20.01%)
+    clothing: 4,699 (19.88%)
+    health & beauty: 4,671 (19.76%)
+
+  Device Used:
+    desktop: 7,923 (33.52%)
+    mobile: 7,881 (33.35%)
+    tablet: 7,830 (33.13%)
+
+--- 7. FRAUD RATE PER KATEGORI ---
+
+  Fraud Rate by Payment Method:
+    bank transfer: 5.56%
+    PayPal: 5.26%
+    credit card: 5.08%
+    debit card: 4.79%
+
+  Fraud Rate by Product Category:
+    clothing: 5.53%
+    home & garden: 5.39%
+    health & beauty: 5.22%
+    toys & games: 4.88%
+    electronics: 4.82%
+
+  Fraud Rate by Device Used:
+    mobile: 5.44%
+    desktop: 5.12%
+    tablet: 4.94%
+
+  Fraud Rate by Transaction Hour:
+    Hour 00: 12.43%
+    Hour 01: 11.26%
+    Hour 02: 9.64%
+    Hour 03: 9.92%
+    Hour 04: 10.4%
+    Hour 05: 12.63%
+    Hour 06: 2.96%
+    Hour 07: 2.78%
+    Hour 08: 2.75%
+    Hour 09: 3.51%
+    Hour 10: 2.93%
+    Hour 11: 3.28%
+    Hour 12: 2.35%
+    Hour 13: 3.49%
+    Hour 14: 3.23%
+    Hour 15: 2.89%
+    Hour 16: 3.06%
+    Hour 17: 2.67%
+    Hour 18: 2.86%
+    Hour 19: 3.44%
+    Hour 20: 2.69%
+    Hour 21: 3.66%
+    Hour 22: 2.99%
+    Hour 23: 2.72%
+
+  Fraud Rate by Account Age Bucket:
+    0-30 days: 23.0%
+    31-90 days: 2.92%
+    91-365 days: 3.15%
+
+  Fraud Rate by Transaction Amount Bucket:
+    $0-100: 3.59%
+    $100-500: 4.21%
+    $500-1000: 8.81%
+    >$1000: 53.25%
+
+--- 8. ANALISIS SHIPPING VS BILLING ADDRESS ---
+  Address mismatch (shipping != billing): 2,342 (9.91%)
+  Fraud rate saat address match: 5.15%
+  Fraud rate saat address mismatch: 5.34%
+
+======================================================================
+DATASET: Version 1 (Full Dataset)
+File: D:\Kevin\Binus S2\Semester 3\Big Data Analytics\Fraud_Detection_Project\dataset\Fraudulent_E-Commerce_Transaction_Data.csv
+======================================================================
+
+--- 1. INFO DASAR ---
+Jumlah baris: 1,472,952
+Jumlah kolom: 16
+Kolom: ['Transaction ID', 'Customer ID', 'Transaction Amount', 'Transaction Date', 'Payment Method', 'Product Category', 'Quantity', 'Customer Age', 'Customer Location', 'Device Used', 'IP Address', 'Shipping Address', 'Billing Address', 'Is Fraudulent', 'Account Age Days', 'Transaction Hour']
+
+--- 2. MISSING VALUES ---
+  Tidak ada missing values.
+
+--- 3. DUPLICATES ---
+  Baris duplikat (semua kolom): 0
+  Transaction ID duplikat: 0
+
+--- 4. DISTRIBUSI FRAUD (Is Fraudulent) ---
+  Legitimate (0): 1,399,114 (94.987%)
+  Fraud (1): 73,838 (5.013%)
+  Class Imbalance Ratio: 18.9:1 (Legitimate:Fraud)
+
+--- 5. STATISTIK FITUR NUMERIKAL ---
+       Transaction Amount  Customer Age    Quantity  Account Age Days  Transaction Hour
+count          1472952.00    1472952.00  1472952.00        1472952.00        1472952.00
+mean               226.77         34.51        3.00            179.65             11.29
+std                270.40         10.00        1.41            106.86              6.98
+min                 10.00        -16.00        1.00              1.00              0.00
+25%                 68.61         28.00        2.00             86.00              5.00
+50%                151.76         35.00        3.00            179.00             11.00
+75%                296.05         41.00        4.00            272.00             17.00
+max              12701.75         86.00        5.00            365.00             23.00
+
+--- 6. DISTRIBUSI FITUR KATEGORIKAL ---
+
+  Payment Method:
+    credit card: 368,429 (25.01%)
+    bank transfer: 368,278 (25.0%)
+    debit card: 368,277 (25.0%)
+    PayPal: 367,968 (24.98%)
+
+  Product Category:
+    health & beauty: 295,367 (20.05%)
+    electronics: 295,294 (20.05%)
+    clothing: 294,319 (19.98%)
+    toys & games: 294,266 (19.98%)
+    home & garden: 293,706 (19.94%)
+
+  Device Used:
+    mobile: 491,743 (33.38%)
+    tablet: 490,938 (33.33%)
+    desktop: 490,271 (33.28%)
+
+--- 7. FRAUD RATE PER KATEGORI ---
+
+  Fraud Rate by Payment Method:
+    bank transfer: 5.04%
+    PayPal: 5.02%
+    debit card: 5.02%
+    credit card: 4.97%
+
+  Fraud Rate by Product Category:
+    toys & games: 5.05%
+    clothing: 5.03%
+    health & beauty: 5.02%
+    home & garden: 5.01%
+    electronics: 4.95%
+
+  Fraud Rate by Device Used:
+    mobile: 5.06%
+    tablet: 5.0%
+    desktop: 4.99%
+
+  Fraud Rate by Transaction Hour:
+    Hour 00: 10.32%
+    Hour 01: 10.43%
+    Hour 02: 10.43%
+    Hour 03: 10.22%
+    Hour 04: 10.34%
+    Hour 05: 10.47%
+    Hour 06: 3.07%
+    Hour 07: 3.03%
+    Hour 08: 3.14%
+    Hour 09: 3.06%
+    Hour 10: 3.13%
+    Hour 11: 2.99%
+    Hour 12: 2.97%
+    Hour 13: 3.19%
+    Hour 14: 3.1%
+    Hour 15: 3.05%
+    Hour 16: 3.01%
+    Hour 17: 2.98%
+    Hour 18: 3.11%
+    Hour 19: 3.11%
+    Hour 20: 2.97%
+    Hour 21: 3.04%
+    Hour 22: 3.09%
+    Hour 23: 3.06%
+
+  Fraud Rate by Account Age Bucket:
+    0-30 days: 22.38%
+    31-90 days: 3.06%
+    91-365 days: 3.07%
+
+  Fraud Rate by Transaction Amount Bucket:
+    $0-100: 3.31%
+    $100-500: 4.19%
+    $500-1000: 8.91%
+    >$1000: 54.9%
+
+--- 8. ANALISIS SHIPPING VS BILLING ADDRESS ---
+  Address mismatch (shipping != billing): 147,523 (10.02%)
+  Fraud rate saat address match: 5.02%
+  Fraud rate saat address mismatch: 4.98%

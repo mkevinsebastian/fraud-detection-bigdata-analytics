@@ -1,0 +1,35 @@
+===============================================================================================
+                GRAPH ANALYTICS & FRAUD RING DISCOVERY RESULTS - ASSIGNMENT II                 
+                          Student: Kevin Sebastian | NIM: 2702746012                           
+===============================================================================================
+1. HETEROGENEOUS ENTITY GRAPH:
+   * Total Nodes (Transactions, Subnets, Locations, States) : 57,904
+   * Total Edges (Entity Sharing & Ingestion Links)         : 70,902
+
+2. PROJECTED TRANSACTION RISK NETWORK:
+   * Total Nodes (High-Risk & Fraud Connected)              : 1,500
+   * Total Edges (Shared Subnet / Location Associations)    : 1,460
+   * Network Density                                        : 0.001299
+   * Connected Components                                   : 771
+   * Largest Connected Component Size                       : 13 nodes (0.87%)
+   * Modularity Score (Q)                                   : 0.9911
+   * Detected Communities / Fraud Clusters                  : 339
+
+3. CENTRALITY DISPARITY (FRAUD vs LEGITIMATE):
+   * Mean PageRank Centrality   -> Fraud: 0.000538 | Legit: 0.000732 | Ratio: 0.73x
+   * Mean Degree Centrality     -> Fraud: 0.000714 | Legit: 0.001594 | Ratio: 0.45x
+
+4. TOP DETECTED HIGH-RISK COMMUNITIES (FRAUD RINGS):
+   Comm ID  | Size   | Frauds   | Legit  | Fraud Rate (%)  | Avg Amount ($)  | Avg PageRank
+   ---------------------------------------------------------------------------
+   1        | 13     | 4        | 9      | 30.77           | $150.61         | 0.000883    
+   2        | 12     | 2        | 10     | 16.67           | $173.66         | 0.000883    
+   3        | 12     | 0        | 12     | 0.00            | $272.22         | 0.000883    
+   4        | 10     | 1        | 9      | 10.00           | $215.24         | 0.000883    
+   5        | 10     | 1        | 9      | 10.00           | $158.39         | 0.000883    
+   6        | 10     | 2        | 8      | 20.00           | $272.76         | 0.000883    
+   7        | 9      | 1        | 8      | 11.11           | $239.57         | 0.000883    
+   8        | 8      | 1        | 7      | 12.50           | $160.03         | 0.000883    
+   9        | 8      | 1        | 7      | 12.50           | $174.33         | 0.000883    
+   10       | 8      | 1        | 7      | 12.50           | $486.73         | 0.000883    
+===============================================================================================

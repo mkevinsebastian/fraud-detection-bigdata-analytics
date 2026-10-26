@@ -1,0 +1,27 @@
+=========================================================================================================
+                       MODEL EVALUATION RESULTS - ASSIGNMENT II BIG DATA ANALYTICS                       
+                               Student: Kevin Sebastian | NIM: 2702746012                                
+=========================================================================================================
+Model Name                       | Accuracy | Precision | Recall   | F1-Score | ROC-AUC  | PR-AUC   | Train(s)
+---------------------------------------------------------------------------------------------------------
+Logistic Regression (Sklearn)    | 0.7916   | 0.1629    | 0.7336   | 0.2666   | 0.8442   | 0.4150   | 0.02    
+Random Forest (Sklearn)          | 0.9361   | 0.3782    | 0.3689   | 0.3734   | 0.8069   | 0.3087   | 0.18    
+XGBoost Classifier               | 0.8466   | 0.1789    | 0.5492   | 0.2699   | 0.7873   | 0.3480   | 0.16    
+XGBoost (Threshold 0.80)         | 0.9425   | 0.4278    | 0.3402   | 0.3790   | 0.7873   | 0.3480   | 0.16    
+Logistic Regression (Spark MLlib) | 0.7885   | 0.1670    | 0.7115   | 0.2705   | 0.8276   | 0.3892   | 12.98   
+Random Forest (Spark MLlib)      | 0.9489   | 0.6792    | 0.1385   | 0.2300   | 0.8165   | 0.3599   | 17.56   
+GBTClassifier (Spark MLlib)      | 0.9476   | 0.6000    | 0.1500   | 0.2400   | 0.8183   | 0.3606   | 26.28   
+---------------------------------------------------------------------------------------------------------
+
+CONFUSION MATRICES SUMMARY:
+  * Logistic Regression (Sklearn)   : TN=3,563, FP=920, FN=65, TP=179
+  * Random Forest (Sklearn)         : TN=4,335, FP=148, FN=154, TP=90
+  * XGBoost Classifier              : TN=3,868, FP=615, FN=110, TP=134
+  * XGBoost (Threshold 0.80)        : TN=4,372, FP=111, FN=161, TP=83
+  * Logistic Regression (Spark MLlib): TN=3,535, FP=923, FN=75, TP=185
+  * Random Forest (Spark MLlib)     : TN=4,441, FP=17, FN=224, TP=36
+  * GBTClassifier (Spark MLlib)     : TN=4,432, FP=26, FN=221, TP=39
+
+SCALABILITY EXECUTION TIME (SECONDS):
+  * V2 (23,634 rows)   -> Sklearn LR: 0.02s | XGBoost: 0.16s | Spark LR: 12.98s | Spark RF: 17.56s
+  * V1 (200,000 rows)  -> Sklearn LR: 6.89s | XGBoost: 1.82s | Spark LR: 8.44s | Spark RF: 39.52s

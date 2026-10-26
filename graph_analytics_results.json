@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "student_name": "Kevin Sebastian",
+    "nim": "2702746012",
+    "course": "COMP8035041 - Big Data Analytics",
+    "total_transactions_analyzed": 23634,
+    "fraud_count": 1222,
+    "generated_at": "2026-10-26 19:37:35"
+  },
+  "heterogeneous_graph": {
+    "total_nodes": 57904,
+    "total_edges": 70902
+  },
+  "transaction_risk_network": {
+    "nodes": 1500,
+    "edges": 1460,
+    "density": 0.0012986435401378697,
+    "connected_components": 771,
+    "largest_connected_component_size": 13,
+    "modularity_q": 0.9911356536515518,
+    "total_communities": 339
+  },
+  "centrality_metrics": {
+    "mean_pagerank_fraud": 0.0005375268111666581,
+    "mean_pagerank_legit": 0.0007318194724003723,
+    "pagerank_disparity_ratio": 0.734507390741554,
+    "mean_degree_fraud": 0.0007135306904404128,
+    "mean_degree_legit": 0.001593840895602083,
+    "degree_disparity_ratio": 0.4476799989316828
+  },
+  "top_high_risk_communities": [
+    {
+      "community_id": 1,
+      "size": 13,
+      "fraud_count": 4,
+      "legit_count": 9,
+      "fraud_rate_pct": 30.77,
+      "avg_amount": 150.61,
+      "avg_pagerank": 0.000883
+    },
+    {
+      "community_id": 2,
+      "size": 12,
+      "fraud_count": 2,
+      "legit_count": 10,
+      "fraud_rate_pct": 16.67,
+      "avg_amount": 173.66,
+      "avg_pagerank": 0.000883
+    },
+    {
+      "community_id": 3,
+      "size": 12,
+      "fraud_count": 0,
+      "legit_count": 12,
+      "fraud_rate_pct": 0.0,
+      "avg_amount": 272.22,
+      "avg_pagerank": 0.000883
+    },
+    {
+      "community_id": 4,
+      "size": 10,
+      "fraud_count": 1,
+      "legit_count": 9,
+      "fraud_rate_pct": 10.0,
+      "avg_amount": 215.24,
+      "avg_pagerank": 0.000883
+    },
+    {
+      "community_id": 5,
+      "size": 10,
+      "fraud_count": 1,
+      "legit_count": 9,
+      "fraud_rate_pct": 10.0,
+      "avg_amount": 158.39,
+      "avg_pagerank": 0.000883
+    },
+    {
+      "community_id": 6,
+      "size": 10,
+      "fraud_count": 2,
+      "legit_count": 8,
+      "fraud_rate_pct": 20.0,
+      "avg_amount": 272.76,
+      "avg_pagerank": 0.000883
+    },
+    {
+      "community_id": 7,
+      "size": 9,
+      "fraud_count": 1,
+      "legit_count": 8,
+      "fraud_rate_pct": 11.11,
+      "avg_amount": 239.57,
+      "avg_pagerank": 0.000883
+    },
+    {
+      "community_id": 8,
+      "size": 8,
+      "fraud_count": 1,
+      "legit_count": 7,
+      "fraud_rate_pct": 12.5,
+      "avg_amount": 160.03,
+      "avg_pagerank": 0.000883
+    },
+    {
+      "community_id": 9,
+      "size": 8,
+      "fraud_count": 1,
+      "legit_count": 7,
+      "fraud_rate_pct": 12.5,
+      "avg_amount": 174.33,
+      "avg_pagerank": 0.000883
+    },
+    {
+      "community_id": 10,
+      "size": 8,
+      "fraud_count": 1,
+      "legit_count": 7,
+      "fraud_rate_pct": 12.5,
+      "avg_amount": 486.73,
+      "avg_pagerank": 0.000883
+    }
+  ]
+}
