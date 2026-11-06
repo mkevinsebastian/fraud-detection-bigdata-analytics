@@ -6,6 +6,7 @@
 # Exclude helper / generator scripts and temp files
 generate_*.py
 create_*.py
+assemble_*.py
 assignment.txt
 
 # Exclude raw full dataset (>100MB GitHub limit)
